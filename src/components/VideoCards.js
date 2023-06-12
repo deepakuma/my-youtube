@@ -13,7 +13,14 @@ const VideoCards = ({info}) => {
         <li>{statistics?.viewCount} Views</li>
       </ul>
     </div>
-  )
-}
+  );
+};
+export const AdVideoCard = ({info}) =>{
+    return (
+        <div className='p-1 m-1 border border-red-900'>
+            <VideoCards info={info}/>
+        </div>
+    );
+};
 
 export default VideoCards
