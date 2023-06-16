@@ -60,7 +60,7 @@ return()=>{
         onBlur={()=> setShowSuggestion(false)}/>
         <button className='border border-gray-400 px-2 py-1 rounded-r-full bg-gray-100'>🔍</button>
         </div>
-        {showSuggestion && (<div className='fixed bg-white py-1 px-2 w-[29.5rem] shadow-lg rounded-lg border border-gray-100 absolute'>
+        {showSuggestion && (<div className=' bg-white py-1 px-2 w-[29.5rem] shadow-lg rounded-lg border border-gray-100 absolute'>
           <ul>
             {suggestions.map((s)=>(
               <li className='py-1 px-3 shadow-sm hover:bg-gray-100'>🔍 {s} </li>
@@ -70,7 +70,7 @@ return()=>{
         
       </div>
       <div className='col-span-1'>
-        <img className='h-8' alt='user=icon' src='https://img.freepik.com/free-icon/black-male-user-symbol_318-60703.jpg'/>
+        <img className='h-8' alt='user=icon' src='https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png'/>
       </div>
     </div>
   )

@@ -15,7 +15,7 @@ console.log(searchParams.get("v"));
   return (
     <div>
     <div className='px-5'>
-      <iframe width="900" height="500" src={"https://www.youtube.com/embed/"+searchParams.get("v") } title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="900" height="500" src={"https://www.youtube.com/embed/"+searchParams.get("v") } title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
     </div>
     <CommentsContainer/>
     </div>

@@ -1,9 +1,82 @@
 import React from 'react'
+import CommentList from './CommentList'
+
+const commentsData = [
+    {
+        name:"Deepa",
+        text: "lorem ipsum kerlkmrgtm ",
+        reply:[{
+            name:"Deepa",
+            text: "lorem ipsum kerlkmrgtm ",
+            reply:[{
+                name:"Deepa",
+                text: "lorem ipsum kerlkmrgtm ",
+                reply:[],
+            },
+            {
+                name:"Deepa",
+                text: "lorem ipsum kerlkmrgtm ",
+                reply:[],
+            },],
+        },],
+    },
+    {
+        name:"Deepa",
+        text: "lorem ipsum kerlkmrgtm ",
+        reply:[],
+    },
+    {
+        name:"Deepa",
+        text: "lorem ipsum kerlkmrgtm ",
+        reply:[{
+            name:"Deepa",
+            text: "lorem ipsum kerlkmrgtm ",
+            reply:[],
+        },
+        {
+            name:"Deepa",
+            text: "lorem ipsum kerlkmrgtm ",
+            reply:[],
+        },
+        {
+            name:"Deepa",
+            text: "lorem ipsum kerlkmrgtm ",
+            reply:[{
+                name:"Deepa",
+                text: "lorem ipsum kerlkmrgtm ",
+                reply:[{
+                    name:"Deepa",
+                    text: "lorem ipsum kerlkmrgtm ",
+                    reply:[{
+                        name:"Deepa",
+                        text: "lorem ipsum kerlkmrgtm ",
+                        reply:[],
+                    },],
+                },],
+            },],
+        },],
+    },
+    {
+        name:"Deepa",
+        text: "lorem ipsum kerlkmrgtm ",
+        reply:[],
+    },
+    {
+        name:"Deepa",
+        text: "lorem ipsum kerlkmrgtm ",
+        reply:[{
+            name:"Deepa",
+            text: "lorem ipsum kerlkmrgtm ",
+            reply:[],
+        },],
+    },
+];
 
 const CommentsContainer = () => {
   return (
-    <div>
-      CommentsContainer
+      <div className='m-5 p-2'>
+      <h1 className='text-xl font-bold'>Comments:</h1>
+      {<CommentList comments = {commentsData}/>}
     </div>
   )
 }
