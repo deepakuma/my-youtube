@@ -3,7 +3,6 @@ import ChatMessage from './ChatMessage'
 import { useDispatch, useSelector } from 'react-redux';
 import { addMessage } from '../utils/chatSlice';
 import { generateRandomName,randomMessage } from '../utils/helper';
-import Button from './Button';
 
 const LiveChat = () => {
 
@@ -21,7 +20,7 @@ dispatch(addMessage({
     name: generateRandomName(),
     message: randomMessage(20)
 }))
-        },10000);
+        },2000);
 
         return () => clearInterval(i);
     },[]);

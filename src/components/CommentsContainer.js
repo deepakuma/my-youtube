@@ -1,82 +1,12 @@
 import React from 'react'
 import CommentList from './CommentList'
-
-const commentsData = [
-    {
-        name:"Deepa",
-        text: "lorem ipsum kerlkmrgtm ",
-        reply:[{
-            name:"Deepa",
-            text: "lorem ipsum kerlkmrgtm ",
-            reply:[{
-                name:"Deepa",
-                text: "lorem ipsum kerlkmrgtm ",
-                reply:[],
-            },
-            {
-                name:"Deepa",
-                text: "lorem ipsum kerlkmrgtm ",
-                reply:[],
-            },],
-        },],
-    },
-    {
-        name:"Deepa",
-        text: "lorem ipsum kerlkmrgtm ",
-        reply:[],
-    },
-    {
-        name:"Deepa",
-        text: "lorem ipsum kerlkmrgtm ",
-        reply:[{
-            name:"Deepa",
-            text: "lorem ipsum kerlkmrgtm ",
-            reply:[],
-        },
-        {
-            name:"Deepa",
-            text: "lorem ipsum kerlkmrgtm ",
-            reply:[],
-        },
-        {
-            name:"Deepa",
-            text: "lorem ipsum kerlkmrgtm ",
-            reply:[{
-                name:"Deepa",
-                text: "lorem ipsum kerlkmrgtm ",
-                reply:[{
-                    name:"Deepa",
-                    text: "lorem ipsum kerlkmrgtm ",
-                    reply:[{
-                        name:"Deepa",
-                        text: "lorem ipsum kerlkmrgtm ",
-                        reply:[],
-                    },],
-                },],
-            },],
-        },],
-    },
-    {
-        name:"Deepa",
-        text: "lorem ipsum kerlkmrgtm ",
-        reply:[],
-    },
-    {
-        name:"Deepa",
-        text: "lorem ipsum kerlkmrgtm ",
-        reply:[{
-            name:"Deepa",
-            text: "lorem ipsum kerlkmrgtm ",
-            reply:[],
-        },],
-    },
-];
+import { commentsData } from "../utils/config";
 
 const CommentsContainer = () => {
   return (
-      <div className='m-5 p-2'>
-      <h1 className='text-xl font-bold'>Comments:</h1>
-      {<CommentList comments = {commentsData}/>}
+      <div>
+      <h1 className='text-lg font-bold p-2 underline underline-offset-4 decoration-red-400'>Comments:</h1>
+       {<CommentList comments = {commentsData}/>}
     </div>
   )
 }
