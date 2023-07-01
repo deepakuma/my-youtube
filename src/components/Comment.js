@@ -1,15 +1,15 @@
 import React from 'react'
 
 const Comment = ({data}) => {
-    const {name, text, reply} = data;
+    const {name, text, userAvatar } = data;
   return (
-    <div className='flex shadow-sm bg-gray-100 p-2 rounded-lg'>
-      <img alt='user' src='https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png' className='h-6'/>
-      <div className='px-3'>
-        <p className='font-bold'>{name}</p>
-        <p>{text}</p>
-      </div>
+    <div className="my-2 ml-2 p-2 flex justify-start items-start bg-slate-100 rounded-md border border-slate-200 border-l-4  border-l-[#ff0000] ">
+    <img className="w-9 h-9" src={userAvatar} alt="comment-user" />
+    <div className="text-sm px-2">
+      <p className="text-sm font-semibold">{name}</p>
+      <p className="text-sm">{text}</p>
     </div>
+  </div>
   )
 }
 
